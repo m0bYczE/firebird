@@ -22,7 +22,7 @@ setup_volume() {
         touch $LOG_FILE
     fi
 
-    ln -s $DATA $PREFIX
+    ln -sf $DATA $PREFIX
     
     if [ -f $ORIGINAL_LOG ]; then
         rm $ORIGINAL_LOG
